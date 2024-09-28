@@ -231,6 +231,9 @@ let products = [
 ];
 
 
+app.get('/', (req, res) => {
+  res.send('Welcome to flipDeal')
+})
 
 //1
 function sortByRating(product1, product2) {
