@@ -5,6 +5,7 @@ const { resolve } = require('path');
 const app = express();
 app.use(cors());
 const port = 3000;
+app.use(express.static('static'));
 
 let products = [
   {
@@ -229,7 +230,7 @@ let products = [
   },
 ];
 
-app.use(express.static('static'));
+
 
 //1
 function sortByRating(product1, product2) {
