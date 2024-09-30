@@ -322,7 +322,7 @@ app.get('/products/filter/price', (req, res) => {
 
 //9
 app.get('/products', (req, res) => {
-  res.json(products);
+  res.json({ products: products});
 });
 
 app.listen(port, () => {
